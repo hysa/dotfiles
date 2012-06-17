@@ -647,6 +647,11 @@ function __rm_single_file(){
 case "${OSTYPE}" in
 # Mac(Unix)
 darwin*)
+    # tmux
+    alias tmux='tmuxx'
+    alias tm='tmuxx'
+    alias tma='tmux attach'
+    alias tml='tmux list-window'
     # ここに設定
     [ -f ~/dotfiles/.zshrc.osx ] && source ~/dotfiles/.zshrc.osx
     ;;
